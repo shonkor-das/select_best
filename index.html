@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selected</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <!-- talwin js link  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black">
+  <header class="">
+    <div class="navbar bg-black justify-evenly">
+      <div class="navbar-start">
+        <div class="h-32 w-full pr-5">
+          <figure><img src="images/messi.jpg" alt="Messi" /></figure>
+      </div>
+      <div class="navbar-center text-center">
+        <h1 class="pt-10 text-5xl font-bold text-red-400 font-serif">Select Your Best Five</h1>
+        <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.<br> Velit officia consequat duis enim velit mollit.<br> Exercitation veniam consequat sunt nostrud amet.</p>
+      </div>
+      <div class="navbar-end pl-6">
+        <figure><img src="images/foodbal.jpg" alt="footbal" class="w-full h-32"/></figure>
+      </div>
+    </div>
+   </header>
+    
+    <!-- <section class="w-10/12 mx-auto mt-10 pb-10 ">
+      All Player 
+      <div class="grid grid-cols-2 gap-4 divide-x">
+        <div class="grid grid-cols-3 gap-4">
+          Player-1 
+          <div class="">
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure><img src="images/player-1.jpg" alt="Messi" class="w-full h-40"/></figure>
+              <div class="card-body items-center">
+                <h2 class="card-title text-lg">Lionel Messi</h2>
+                <div class="flex">
+                  <span class="">36 Goals</span>
+                  <span class="font-bold mx-2">.</span>
+                  <span>120 Assist</span>
+                </div>
+                <div class="card-actions justify-center px-28">
+                  <button id="select-btn" class="btn btn-primary px-9 mt-1" onclick="addToSelect(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           Player-2 
+          <div class="">
+            <div class="card card-compact w-full bg-base-100 shadow-xl ">
+              <figure><img src="images/player-2.jpg" alt="Mbappe" class="w-full h-40"/></figure>
+              <div class="card-body items-center">
+                <h2 class="card-title text-lg">Kylian Mbappé</h2>
+                <div class="flex">
+                  <span class="">28 Goals</span>
+                  <span class="font-bold mx-2">.</span>
+                  <span>90 Assist</span>
+                </div>
+                <div class="card-actions justify-center px-28 mt-1">
+                  <button class="btn btn-Slate-300 px-9" onclick="addToSelect(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          Player-3 
+          <div class="">
+            <div class="card card-compact w-full bg-base-100 shadow-xl ">
+              <figure><img src="images/player-3.jpg" alt="Neymar" class="w-full h-40"/></figure>
+              <div class="card-body items-center">
+                <h2 class="card-title text-lg">Neymar Jr</h2>
+                <div class="flex">
+                  <span class="">32 Goals</span>
+                  <span class="font-bold mx-2">.</span>
+                  <span>100 Assist</span>
+                </div>
+                <div class="card-actions justify-center px-28 mt-1">
+                  <button class="btn btn-secondary text-white px-9" onclick="addToSelect(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          Player-4 
+          <div class="">
+            <div class="card card-compact w-full bg-base-100 shadow-xl ">
+              <figure><img src="images/player-4.jpg" alt="Ronaldo" class="w-full h-40"/></figure>
+              <div class="card-body items-center">
+                <h2 class="card-title text-lg">Ronaldo</h2>
+                <div class="flex">
+                  <span class="">40 Goals</span>
+                  <span class="font-bold mx-2">.</span>
+                  <span>130 Assist</span>
+                </div>
+                <div class="card-actions justify-center px-28 mt-1">
+                  <button class="btn btn-accent text-white px-9" onclick="addToSelect(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          Player-5 
+          <div class="">
+            <div class="card card-compact w-full bg-base-100 shadow-xl ">
+              <figure><img src="images/player-5.jpg" alt="Salah" class="w-full h-40"/></figure>
+              <div class="card-body items-center">
+                <h2 class="card-title text-lg">Salah</h2>
+                <div class="flex">
+                  <span class="">36 Goals</span>
+                  <span class="font-bold mx-2">.</span>
+                  <span>120 Assist</span>
+                </div>
+                <div class="card-actions justify-center px-28 mt-1">
+                  <button class="btn btn-warning text-white px-9" onclick="addToSelect(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          Player-6 
+          <div class="">
+            <div class="card card-compact w-full bg-base-100 shadow-xl ">
+              <figure><img src="images/player-6.jpg" alt="ozil" class="w-full h-40"/></figure>
+              <div class="card-body items-center">
+                <h2 class="card-title text-lg">Mesut Özil</h2>
+                <div class="flex">
+                  <span class="">36 Goals</span>
+                  <span class="font-bold mx-2">.</span>
+                  <span>120 Assist</span>
+                </div>
+                <div class="card-actions justify-center px-28 mt-1">
+                  <button class="btn btn-error text-white px-9" onclick="addToSelect(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          Player-7 
+          <div class="">
+            <div class="card card-compact w-full bg-base-100 shadow-xl ">
+              <figure><img src="images/player-7.jpg" alt="Di-María" class="w-full h-40"/></figure>
+              <div class="card-body items-center">
+                <h2 class="card-title text-lg">Di María</h2>
+                <div class="flex">
+                  <span class="">36 Goals</span>
+                  <span class="font-bold mx-2">.</span>
+                  <span>120 Assist</span>
+                </div>
+                <div class="card-actions justify-center px-28 mt-1">
+                  <button class="btn btn-success text-white px-9" onclick="addToSelect(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          Player-8 
+          <div class="">
+            <div class="card card-compact w-full bg-base-100 shadow-xl ">
+              <figure><img src="images/player-8.jpg" alt="Marcelo" class="w-full h-40"/></figure>
+              <div class="card-body items-center">
+                <h2 class="card-title text-lg">Marcelo</h2>
+                <div class="flex">
+                  <span class="">36 Goals</span>
+                  <span class="font-bold mx-2">.</span>
+                  <span>120 Assist</span>
+                </div>
+                <div class="card-actions justify-center px-28 mt-1">
+                  <button class="btn btn-base-200 tect-white px-9" onclick="addToSelect(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          Player-9 
+          <div class="">
+            <div class="card card-compact w-full bg-base-100 shadow-xl ">
+              <figure><img src="images/player-9.jpg" alt="Jamal" class="w-full h-40"/></figure>
+              <div class="card-body items-center">
+                <h2 class="card-title text-lg" id="input-value">Jamal Bhuyan </h2>
+                <div class="flex">
+                  <span class="">36 Goals</span>
+                  <span class="font-bold mx-2">.</span>
+                  <span>120 Assist</span>
+                </div>
+                <div class="card-actions justify-center px-28 mt-1">
+                  <button id="input-btn" class="btn btn-warning text-white px-9" onclick="addToSelect(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        Selected Player 
+        <div class="grid grid-cols-1 ">
+          <div class="text-white h-0">
+            <h2 class="text-3xl text-center">Selected - V</h2>
+              <ul id="select-players" class="ml-10">
+                <li></li>
+              </ul>
+          </div>
+          <div class="col-span-1 text-center bg-slate-100 ml-10 my-auto mb-96">
+            <h1 class="text-2xl font-semibold mb-3">Budget</h1>
+            <div class="block">
+              <label class="text-lg font-normal w-36" for="Per Player">Per Player</label>
+              <input class="bg-slate-200 h-8 w-3/6 px-3 font-bold " type="1000" name="player" id="player-filed">
+            </div>
+            <button id="calculate-btn" class="bg-sky-400 text-white rounded-md ml-9 inline-block h-10 mx-auto my-3 w-32">Calculate</button><br>
+            
+            <div class="block">
+              <label class="text-lg font-normal" for="expense">Player Expenses</label>
+              <h4 class="inline-block pl-2 text-orange-400 font-bold" type="1000" name="player">$<span id="player-expenses">0</span>
+              </h4>
+            </div>
+            
+            <div class="block my-3">
+              <label class="text-lg font-normal w-32 ml-6" for="income">Manager</label>
+              <input class="bg-slate-200 h-8 w-3/6 px-3 font-bold" type="text" name="Manager" id="Manager-filed">
+            </div>
+            <div class="block my-3">
+              <label class="text-lg font-normal w-32 " for="income">Coach</label>
+              <input class="bg-slate-200 h-8 w-3/6 px-3 font-bold" type="text" name="Coach" id="Coach-filed">
+            </div>
+    
+            <button id="calculate-btn-total" class="bg-sky-400 text-white rounded-md w-32 inline-block h-10 ml-9">Calculate Total</button><br>
+            <label class="text-xl font-semibold mt-2">Total</label>
+            <h4 class="inline-block pl-2 my-4 text-orange-400 font-bold mx-0" type="1000" name="player">$<span id="totalAmount">0</span>
+            </h4>
+            
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="js/Player.js"></script> -->
+</body>
+</html>
